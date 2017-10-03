@@ -12,10 +12,12 @@ public class Calculator {
     private double value;
 
     public Calculator() {
-        setValue(0.0);
+
+        setValue(value);
     }
 
     public void setValue(double val) {
+
         value = val;
     }
 
@@ -47,7 +49,7 @@ public class Calculator {
      * Multiply operation
      */
     public double mul(double operand) {
-        value /= operand;
+        value *= operand;
         return value;
     }
 }
